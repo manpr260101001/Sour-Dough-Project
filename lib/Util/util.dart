@@ -128,22 +128,22 @@ class Util {
               child: Row(
                 children: [
                   IconButtons(
-                    destination: AboutScreen(),
+                    url: "https://www.facebook.com/",
                     icon: FontAwesomeIcons.facebook,
                     color: Colors.blue,
                   ),
                   IconButtons(
-                    destination: AboutScreen(),
+                    url: "https://www.instagram.com/",
                     icon: FontAwesomeIcons.instagram,
                     color: Colors.pink,
                   ),
                   IconButtons(
-                    destination: AboutScreen(),
+                    url: "https://www.twitter.com/",
                     icon: FontAwesomeIcons.twitter,
                     color: Colors.blue,
                   ),
                   IconButtons(
-                    destination: AboutScreen(),
+                    url: "https://www.linkedin.com/",
                     icon: FontAwesomeIcons.linkedin,
                     color: Colors.blue,
                   ),
