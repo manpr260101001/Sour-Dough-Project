@@ -9,11 +9,21 @@ import '../screens/menu_screen.dart';
 import '../widgets/menuButtons/menuButtons.dart';
 
 class Util {
-  static PreferredSizeWidget? getAppBar() {
+  static PreferredSizeWidget? getAppBar(BuildContext context) {
     return AppBar(
-      toolbarHeight: 120,
+      automaticallyImplyLeading: false,
+      toolbarHeight: 100,
       backgroundColor: Color(0xFF738a6e),
-      title: Image.asset("assets/sourdough_logo.jpeg", height: 200, width: 200),
+      title: InkWell(
+        onTap: () {
+          Navigator.of(context).popUntil((route) => route.isFirst);
+        },
+        child: Image.asset(
+          "assets/sourdough_logo.jpeg",
+          height: 200,
+          width: 200,
+        ),
+      ),
       centerTitle: false,
       actions: [
         MenuButtons(heading: "About", destination: AboutScreen()),
