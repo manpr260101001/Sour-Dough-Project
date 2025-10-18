@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sour_dough/screens/about_screen.dart';
 import 'package:sour_dough/screens/breads.dart';
 import 'package:sour_dough/screens/contact_us_screen.dart';
+import 'package:sour_dough/widgets/menuButtons/iconButtons.dart';
 import '../screens/menu_screen.dart';
 import '../widgets/menuButtons/menuButtons.dart';
 
@@ -117,6 +119,36 @@ class Util {
                   ),
                 ),
               ],
+            ),
+          ),
+          //SizedBox(height: 50),
+          Padding(
+            padding: const EdgeInsets.only(left: 500, bottom: 50, top: 50),
+            child: SizedBox(
+              child: Row(
+                children: [
+                  IconButtons(
+                    destination: AboutScreen(),
+                    icon: FontAwesomeIcons.facebook,
+                    color: Colors.blue,
+                  ),
+                  IconButtons(
+                    destination: AboutScreen(),
+                    icon: FontAwesomeIcons.instagram,
+                    color: Colors.pink,
+                  ),
+                  IconButtons(
+                    destination: AboutScreen(),
+                    icon: FontAwesomeIcons.twitter,
+                    color: Colors.blue,
+                  ),
+                  IconButtons(
+                    destination: AboutScreen(),
+                    icon: FontAwesomeIcons.linkedin,
+                    color: Colors.blue,
+                  ),
+                ],
+              ),
             ),
           ),
         ],
