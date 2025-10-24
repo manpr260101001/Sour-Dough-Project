@@ -12,19 +12,41 @@ class AboutScreen extends StatelessWidget {
       body: Container(
         child: Column(
           children: [
-            SizedBox(height: 100),
             Row(
               children: [
                 SizedBox(
                   child: Padding(
-                    padding: const EdgeInsets.all(40.0),
-                    child: Column(
-                      children: [
-                        Text("About Us"),
-                        Text(
-                          "Our Bakery and Handcrafted Products are one of the highest quality.",
+                    padding: const EdgeInsets.all(80.0),
+                    child: SizedBox(
+                      width: 500,
+                      child: Padding(
+                        padding: const EdgeInsets.all(50.0),
+                        child: Column(
+                          children: [
+                            Text(
+                              "About Us",
+                              style: TextStyle(
+                                color: Color(0xFF738a6e),
+                                fontSize: 30,
+                              ),
+                            ),
+                            SizedBox(height: 30),
+                            Text(
+                              "Our Bakery and Handcrafted Products are one of the highest quality.",
+                              style: TextStyle(fontSize: 20),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 450,
+                  width: 450,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("assets/baking.jpg"),
                     ),
                   ),
                 ),
